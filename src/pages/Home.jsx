@@ -150,7 +150,19 @@ export default function Home({ setCurrentPage, setGeneratorParams }) {
           </div>
 
           {/* Hero Visual Mockup */}
-          <div style={{ display: 'flex', justifyContent: 'center' }} className="hero-visual">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '24px' }} className="hero-visual">
+            <img 
+              src="/src/assets/hero_graphic.png" 
+              alt="Hashtag Generator Graphic" 
+              style={{
+                width: '100%',
+                maxWidth: '480px',
+                borderRadius: '16px',
+                boxShadow: 'var(--shadow-lg)',
+                objectFit: 'cover',
+                transform: 'rotate(-1deg)'
+              }}
+            />
             <div className="glass-panel" style={{
               padding: '24px',
               width: '100%',

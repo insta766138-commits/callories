@@ -55,25 +55,37 @@ export default function About() {
             </p>
           </div>
           
-          <div style={{
-            background: 'linear-gradient(135deg, var(--accent-light) 0%, rgba(168, 85, 247, 0.1) 100%)',
-            padding: '32px',
-            borderRadius: '16px',
-            border: '1px dashed var(--accent-color)',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            textAlign: 'center',
-            gap: '12px'
-          }}>
-            <Hash size={36} style={{ color: 'var(--accent-color)' }} />
-            <span style={{ fontWeight: 800, fontSize: '1.1rem', fontFamily: 'var(--font-display)' }}>
-              100% Client-Side Engine
-            </span>
-            <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-              No accounts. No databases. Your search records remain secure in local storage.
-            </span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <img 
+              src="/src/assets/about_graphic.png" 
+              alt="Creators Workflow Graphic" 
+              style={{
+                width: '100%',
+                borderRadius: '16px',
+                boxShadow: 'var(--shadow-lg)',
+                objectFit: 'cover'
+              }}
+            />
+            <div style={{
+              background: 'linear-gradient(135deg, var(--accent-light) 0%, rgba(168, 85, 247, 0.1) 100%)',
+              padding: '24px',
+              borderRadius: '16px',
+              border: '1px dashed var(--accent-color)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              textAlign: 'center',
+              gap: '8px'
+            }}>
+              <Hash size={28} style={{ color: 'var(--accent-color)' }} />
+              <span style={{ fontWeight: 800, fontSize: '1.05rem', fontFamily: 'var(--font-display)' }}>
+                100% Client-Side Engine
+              </span>
+              <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                No accounts. No databases. Your search records remain secure in local storage.
+              </span>
+            </div>
           </div>
         </div>
 
