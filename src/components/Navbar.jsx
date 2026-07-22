@@ -33,8 +33,8 @@ export default function Navbar({ currentPage, setCurrentPage, darkMode, setDarkM
         borderRight: 'none',
         display: 'flex',
         alignItems: 'center',
-        backgroundColor: 'rgba(15, 23, 42, 0.95)',
-        borderBottom: '1px solid rgba(255,255,255,0.1)'
+        backgroundColor: 'var(--bg-secondary)',
+        borderBottom: '1px solid var(--border-color)'
       }}>
         <div className="container" style={{
           display: 'flex',
@@ -63,7 +63,7 @@ export default function Navbar({ currentPage, setCurrentPage, darkMode, setDarkM
               fontSize: '1.25rem',
               fontWeight: 800,
               letterSpacing: '-0.5px',
-              color: '#f8fafc'
+              color: 'var(--text-primary)'
             }}>
               Hash<span style={{ color: 'var(--accent-color)' }}>Craft</span>
             </span>
@@ -79,7 +79,7 @@ export default function Navbar({ currentPage, setCurrentPage, darkMode, setDarkM
                   style={{
                     fontWeight: 500,
                     fontSize: '0.95rem',
-                    color: currentPage === link.id ? 'var(--accent-color)' : '#cbd5e1',
+                    color: currentPage === link.id ? 'var(--accent-color)' : 'var(--text-secondary)',
                     transition: 'color var(--transition-fast)',
                     position: 'relative',
                     padding: '8px 0',
@@ -113,8 +113,8 @@ export default function Navbar({ currentPage, setCurrentPage, darkMode, setDarkM
                 style={{
                   padding: '8px',
                   borderRadius: '10px',
-                  backgroundColor: 'rgba(255,255,255,0.1)',
-                  color: '#f8fafc',
+                  backgroundColor: 'var(--bg-tertiary)',
+                  color: 'var(--text-primary)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -144,8 +144,8 @@ export default function Navbar({ currentPage, setCurrentPage, darkMode, setDarkM
               style={{
                 padding: '8px',
                 borderRadius: '10px',
-                backgroundColor: 'rgba(255,255,255,0.1)',
-                color: '#f8fafc',
+                backgroundColor: 'var(--bg-tertiary)',
+                color: 'var(--text-primary)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -159,7 +159,7 @@ export default function Navbar({ currentPage, setCurrentPage, darkMode, setDarkM
             
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              style={{ color: '#f8fafc', display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer' }}
+              style={{ color: 'var(--text-primary)', display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer' }}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
